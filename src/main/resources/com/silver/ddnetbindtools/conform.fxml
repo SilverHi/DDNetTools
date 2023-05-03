@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<VBox prefHeight="150.0" prefWidth="450.0" spacing="10.0" style="-fx-background-color: #141414;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.silver.ddnetbindtools.controller.ConformController">
+   <children>
+      <Label contentDisplay="CENTER" prefHeight="57.0" prefWidth="1098.0" text="备注" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="22.0" />
+         </font>
+         <opaqueInsets>
+            <Insets left="20.0" />
+         </opaqueInsets>
+      </Label>
+      <TextField fx:id="bak_input" prefHeight="55.0" prefWidth="410.0" stylesheets="@../../../common.css">
+         <font>
+            <Font name="System Italic" size="15.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <padding>
+            <Insets left="20.0" />
+         </padding>
+         <styleClass>
+            <String fx:value="black1" />
+            <String fx:value="input_font_color" />
+         </styleClass>
+      </TextField>
+      <HBox alignment="CENTER_RIGHT" prefHeight="38.0" prefWidth="390.0" spacing="20.0">
+         <children>
+            <Button onAction="#conformBak" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false"  prefHeight="2.0" prefWidth="59.0" style="-fx-background-color: #1668dc; -fx-border-radius: 10px; -fx-background-radius: 10px;" text="确认" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button onAction="#cancelBak" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false"  prefHeight="53.0" prefWidth="59.0" style="-fx-background-color: #fd676f; -fx-border-radius: 10px; -fx-background-radius: 10px;" text="取消" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+         <VBox.margin>
+            <Insets right="20.0" />
+         </VBox.margin>
+      </HBox>
+   </children>
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="10.0" />
+   </padding>
+</VBox>

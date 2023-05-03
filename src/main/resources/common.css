@@ -1,0 +1,31 @@
+.black1 {
+    -fx-background-color:  #141414;
+    -fx-background-radius:  10px;
+    -fx-border-color:  #303030;
+    -fx-border-radius:  10px;
+}
+
+
+.pading-common {
+    -fx-padding:  20px;
+}
+.scroll-pane > .viewport {
+    -fx-background-color: transparent;
+}
+
+.black2 {
+    -fx-background-color:  #1d1d1d;
+    -fx-background-radius:  10px;
+    -fx-border-color:  #303030;
+    -fx-border-radius:  10px;
+}
+
+.input_font_color {
+    -fx-text-fill: #ffffff;
+}
+
+.combo-box .list-cell {
+    -fx-background-color:  #1d1d1d;
+    -fx-font-size: 18px;
+    -fx-text-fill: white;
+}

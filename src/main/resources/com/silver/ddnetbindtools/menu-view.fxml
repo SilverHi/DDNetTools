@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" prefHeight="900" prefWidth="1300" spacing="20.0" style="-fx-background-color: #000000;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.silver.ddnetbindtools.controller.MenuController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <HBox prefHeight="955.0" prefWidth="1260.0" spacing="20.0">
+      <children>
+         <VBox minWidth="225.0" prefHeight="860.0" prefWidth="225.0" style="-fx-min-width: 200px;">
+            <children>
+               <VBox prefHeight="428.0" prefWidth="225.0" spacing="10.0" stylesheets="@../../../common.css">
+                  <children>
+                     <HBox prefHeight="57.0" prefWidth="278.0">
+                        <children>
+                           <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="43.0" prefWidth="281.0" text="DDNetBindTools" textFill="WHITE">
+                              <font>
+                                 <Font name="System Bold" size="17.0" />
+                              </font>
+                           </Label>
+                        </children>
+                     </HBox>
+                     <Button fx:id="bindlist_btn" mnemonicParsing="false" prefHeight="45.0" prefWidth="268.0" style="-fx-background-color: #111a2c; -fx-background-radius: 10px;" text="bind管理" textFill="#124edc" textOverrun="CLIP">
+                        <font>
+                           <Font name="System Italic" size="18.0" />
+                        </font>
+                        <cursor>
+                           <Cursor fx:constant="HAND" />
+                        </cursor>
+                     </Button>
+                     <Button fx:id="setting_btn" mnemonicParsing="false" prefHeight="45.0" prefWidth="268.0" style="-fx-background-color: #111a2c; -fx-background-radius: 10px;" text="设置" textFill="#124edc" textOverrun="CLIP">
+                        <font>
+                           <Font name="System Italic" size="18.0" />
+                        </font>
+                        <cursor>
+                           <Cursor fx:constant="HAND" />
+                        </cursor>
+                     </Button>
+
+                  </children>
+                  <styleClass>
+                     <String fx:value="black1" />
+                     <String fx:value="pading-common" />
+                  </styleClass>
+               </VBox>
+               <VBox alignment="BOTTOM_LEFT" prefHeight="433.0" prefWidth="225.0">
+                  <children>
+                     <Button onAction="#resetApp" mnemonicParsing="false" prefHeight="45.0" prefWidth="239.0" style="-fx-background-color: #111a2c; -fx-background-radius: 10px;" text="重置应用" textFill="#124edc" textOverrun="CLIP">
+                        <font>
+                           <Font name="System Italic" size="18.0" />
+                        </font>
+                        <cursor>
+                           <Cursor fx:constant="HAND" />
+                        </cursor>
+                     </Button>
+                     <Label alignment="CENTER" prefHeight="27.0" prefWidth="245.0" text="made by 皮肤越粉" textFill="#7e7e78">
+                        <font>
+                           <Font name="System Italic" size="16.0" />
+                        </font>
+                     </Label>
+                     <Label alignment="CENTER" prefHeight="15.0" prefWidth="264.0" text="v0.0.1 bate">
+                        <font>
+                           <Font size="18.0" />
+                        </font>
+                     </Label>
+                  </children>
+               </VBox>
+            </children>
+         </VBox>
+         <VBox prefHeight="860.0" prefWidth="974.0" style="-fx-pref-width: 1000px;">
+            <children>
+               <VBox alignment="TOP_CENTER" prefHeight="860.0" prefWidth="1040.0" spacing="10.0" stylesheets="@../../../common.css">
+                  <children>
+                     <Label fx:id="topic_label" contentDisplay="CENTER" prefHeight="57.0" prefWidth="1098.0" text="通用配置" textFill="WHITE">
+                        <font>
+                           <Font name="System Bold" size="30.0" />
+                        </font>
+                        <opaqueInsets>
+                           <Insets left="20.0" />
+                        </opaqueInsets>
+                        <padding>
+                           <Insets left="20.0" />
+                        </padding>
+                     </Label>
+                     <Label maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="2.0" prefWidth="930.0" style="-fx-border-color: #313131;" />
+                     <VBox fx:id="page_box">
+
+                     </VBox>
+                  </children>
+                  <padding>
+                     <Insets left="20.0" />
+                  </padding>
+                  <styleClass>
+                     <String fx:value="black1" />
+                     <String fx:value="pading-common" />
+                  </styleClass>
+               </VBox>
+            </children>
+         </VBox>
+      </children>
+   </HBox>
+</VBox>
